@@ -15,9 +15,27 @@ namespace Calculator
 
         public object Calculate(int operand1, int operand2, char operation)
         {
+            if (operation.Equals('+'))
+            {
+                return operand1 + operand2;
+            }
+
+            if (operation.Equals('-'))
+            {
+                return operand1 - operand2;
+            }
+
+            if (operation.Equals('*'))
+            {
+                return operand1 * operand2;
+            }
+
+            if (operation.Equals('/'))
+            {
+                return operand1 / operand2;
+            }
+
             return null;
         }
-
-        
     }
 }
